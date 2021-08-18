@@ -111,6 +111,34 @@ class Foot_Length_Measurement():
         """
         return foot*12
 
+
+class Inch_Length_Measurement():
+    """
+        A class to represent a Inch to foot Length Measurements.
+        ...
+        Attributes
+        ----------
+        its not taking any attributes
+        ...
+        Methods
+        -------
+        # inch_length_comparision(foot):
+        # inch_length_equality(foot, inch)
+        # inch_length_null(foot)
+        # inch_length_type(foot)
+        # inch_length_value(foot)
+    """ 
+    def inch_length_comparision(inch):
+        """
+            Description:
+                function length_comparision compare the length between foot to inch. with taking one input as an argument
+            Parameter:
+                inch as an input
+            Return:
+                returning the convertable value from foot to inch
+        """ 
+        return inch/12
+
 if __name__=='__main__':
     foot_obj = Foot_Length_Measurement()
     foot_obj.foot_length_comparision()

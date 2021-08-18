@@ -7,7 +7,7 @@
 # '''
 
 import unittest
-from quantity_measure import Foot_Length_Measurement
+from quantity_measure import Foot_Length_Measurement,Inch_Length_Measurement
 
 class MyTestCases(unittest.TestCase):        
     def test_foot_lenght_equality(self):
@@ -57,5 +57,17 @@ class MyTestCases(unittest.TestCase):
         """ 
         self.assertEqual(Foot_Length_Measurement.foot_length_value(3), 36)
 
+
+# checking for Inch to Foot
+
+    def test_inch_length_measure(self):
+        """
+            Description:
+                function test_length_measure compare the length which gets returns and the actuall value 24.
+            assert:
+                returning the convertable value from foot to inch
+        """ 
+        self.assertEqual(Inch_Length_Measurement.inch_length_comparision(24), 2)
+        
 if __name__ == '__main__':
     unittest.main()
