@@ -237,6 +237,17 @@ class Foot_Yard_Measurement():
         except Exception:
             print(Exception) 
 
+    def happy_sad_foot_yard_case(foot):
+        """
+            Description:
+                function happy_sad_foot_yard_case to check the value that converts foot into yard
+            Parameter:
+                foot as an input
+            Return:
+                returning the converted value of foot into yard.
+        """
+        return foot/3
+
 if __name__=='__main__':
     foot_obj = Foot_Length_Measurement()
     foot_obj.foot_length_comparision()

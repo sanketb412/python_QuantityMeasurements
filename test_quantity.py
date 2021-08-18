@@ -7,7 +7,7 @@
 # '''
 
 import unittest
-from quantity_measure import Foot_Length_Measurement,Inch_Length_Measurement,Foot_Inch_Measurement
+from quantity_measure import Foot_Length_Measurement,Inch_Length_Measurement,Foot_Inch_Measurement,Foot_Yard_Measurement
 
 class MyTestCases(unittest.TestCase):        
     def test_foot_lenght_equality(self):
@@ -118,6 +118,12 @@ class MyTestCases(unittest.TestCase):
     def test_in_ft_comapring_length(self):
         self.assertNotEqual(Foot_Inch_Measurement.happy_sad_inch_case(1), 1)
         self.assertEqual(Foot_Inch_Measurement.happy_sad_inch_case(12), 1)
+
+# comapring foot inch yard like happy sad test
+
+    def test_ft_yd_comparing_length(self):
+        self.assertEqual(Foot_Yard_Measurement.happy_sad_foot_yard_case(3), 1)
+        self.assertNotEqual(Foot_Yard_Measurement.happy_sad_foot_yard_case(1), 1)
 
 if __name__ == '__main__':
     unittest.main()
