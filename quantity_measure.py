@@ -175,6 +175,27 @@ class Inch_Length_Measurement():
                 returning the converted value of inch into foot.
         """
         return inch/12
+    
+class Foot_Inch_Measurement():
+
+    def foot_inch_value(foot_value, inch_value):
+        """
+            Description:
+                function foot_inch_value to check the value that converts foot into inch and inch into foot
+            Parameter:
+                foot as an input as well as inch
+            Return:
+                returning the converted value of inch into foot. and foot into inch
+        """
+        try:
+            inch = 12*foot_value
+            foot = inch_value/12
+            if inch == foot:
+                return True
+            else:
+                False
+        except Exception:
+            print(Exception)
 
 if __name__=='__main__':
     foot_obj = Foot_Length_Measurement()
