@@ -219,6 +219,27 @@ class Foot_Inch_Measurement():
         """
         return inch/12
 
+class Foot_Yard_Measurement():
+
+    def length_converstion(self):
+        """
+            Description:
+                function length_converstion to check the value that converts foot into inch
+            Parameter:
+                foot as an input
+            Return:
+                returning the converted value of inch into foot.
+        """
+        try:
+            yard = 1
+            foot = 3*yard
+            print("1 yard =", foot, "foot")
+        except Exception:
+            print(Exception) 
+
 if __name__=='__main__':
     foot_obj = Foot_Length_Measurement()
     foot_obj.foot_length_comparision()
+    # for yards
+    obj_yard = Foot_Yard_Measurement()
+    obj_yard.length_converstion()
