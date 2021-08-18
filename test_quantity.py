@@ -69,5 +69,16 @@ class MyTestCases(unittest.TestCase):
         """ 
         self.assertEqual(Inch_Length_Measurement.inch_length_comparision(24), 2)
         
+    def test_inch_ref_check(self):
+        """
+            Description:
+                function test_ref_check check the value call by referance .
+            assert:
+                checking the value as True expected wiith message
+        """ 
+        message = "Test Value is True"
+        foot = 2
+        self.assertWarns(Inch_Length_Measurement.inch_length_ref(foot), message)
+
 if __name__ == '__main__':
     unittest.main()

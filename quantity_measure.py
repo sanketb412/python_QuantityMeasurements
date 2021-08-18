@@ -139,6 +139,21 @@ class Inch_Length_Measurement():
         """ 
         return inch/12
 
+    def inch_length_ref(foot):
+        """
+            Description:
+                function length_equality to check the length between foot to inch to be true or false.
+            Parameter:
+                foot as an input and inch as an output
+            Return:
+                returning the boolean value after satisfing the condition.
+        """
+        inch = 24
+        if inch == 12*foot:
+            return True
+        else:
+            return False
+
 if __name__=='__main__':
     foot_obj = Foot_Length_Measurement()
     foot_obj.foot_length_comparision()
