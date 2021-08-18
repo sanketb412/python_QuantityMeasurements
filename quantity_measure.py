@@ -56,6 +56,24 @@ class Foot_Length_Measurement():
         except Exception:
             print(Exception)
 
+    
+    def foot_length_null(foot):
+        """
+            Description:
+                function length_null to check the null value
+            Parameter:
+                foot as an null value
+            Return:
+                returning the boolean value after satisfing the condition.
+        """
+        try:
+            if foot == None:
+                return True
+            else:
+                return False
+        except Exception:
+            print(Exception)
+
 if __name__=='__main__':
     foot_obj = Foot_Length_Measurement()
     foot_obj.foot_length_comparision()

@@ -19,6 +19,15 @@ class MyTestCases(unittest.TestCase):
         """ 
         self.assertEqual(Foot_Length_Measurement.foot_length_equality(1,1), True)
 
+    def test_foot_null_check(self):
+        """
+            Description:
+                function test_null_check check the null value.
+        assert:
+            checking the null value as True as expected
+    """ 
+        self.assertEqual(Foot_Length_Measurement.foot_length_null(None), True)
+
 
 if __name__ == '__main__':
     unittest.main()
