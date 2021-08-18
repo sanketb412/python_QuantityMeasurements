@@ -80,5 +80,14 @@ class MyTestCases(unittest.TestCase):
         foot = 2
         self.assertWarns(Inch_Length_Measurement.inch_length_ref(foot), message)
 
+    def test_inch_type_check(self):
+        """
+            Description:
+                function test_type_check check the type of the input.
+            assert:
+                matching the type of the input value and return value
+        """ 
+        self.assertEqual(Inch_Length_Measurement.inch_length_type(60), int)
+
 if __name__ == '__main__':
     unittest.main()

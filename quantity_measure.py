@@ -154,6 +154,17 @@ class Inch_Length_Measurement():
         else:
             return False
 
+    def inch_length_type(inch):
+        """
+            Description:
+                function length_type to check the type of the given input from user
+            Parameter:
+                foot as an input like an argument
+            Return:
+                returning type of the arguments/input.
+        """
+        return type(inch)
+
 if __name__=='__main__':
     foot_obj = Foot_Length_Measurement()
     foot_obj.foot_length_comparision()
