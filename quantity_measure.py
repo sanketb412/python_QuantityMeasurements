@@ -197,6 +197,28 @@ class Foot_Inch_Measurement():
         except Exception:
             print(Exception)
 
+    def happy_sad_foot_case(foot):
+        """
+            Description:
+                function happy_sad_foot_case to check the value that converts foot into inch
+            Parameter:
+                foot as an input
+            Return:
+                returning the converted value of inch into foot.
+        """
+        return 12*foot
+
+    def happy_sad_inch_case(inch):
+        """
+            Description:
+                function happy_sad_inch_case to check the value that converts foot into inch
+            Parameter:
+                inch as an input
+            Return:
+                returning the converted value of inch into foot.
+        """
+        return inch/12
+
 if __name__=='__main__':
     foot_obj = Foot_Length_Measurement()
     foot_obj.foot_length_comparision()

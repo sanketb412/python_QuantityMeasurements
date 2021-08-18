@@ -109,5 +109,15 @@ class MyTestCases(unittest.TestCase):
         """ 
         self.assertEqual(Foot_Inch_Measurement.foot_inch_value(0, 0), True)
 
+# comparing length like happy and sad cases
+
+    def test_ft_in_comapring_length(self):
+        self.assertNotEqual(Foot_Inch_Measurement.happy_sad_foot_case(1), 1)
+        self.assertEqual(Foot_Inch_Measurement.happy_sad_foot_case(1), 12)
+    
+    def test_in_ft_comapring_length(self):
+        self.assertNotEqual(Foot_Inch_Measurement.happy_sad_inch_case(1), 1)
+        self.assertEqual(Foot_Inch_Measurement.happy_sad_inch_case(12), 1)
+
 if __name__ == '__main__':
     unittest.main()
