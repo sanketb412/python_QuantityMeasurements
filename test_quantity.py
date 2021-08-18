@@ -125,5 +125,9 @@ class MyTestCases(unittest.TestCase):
         self.assertEqual(Foot_Yard_Measurement.happy_sad_foot_yard_case(3), 1)
         self.assertNotEqual(Foot_Yard_Measurement.happy_sad_foot_yard_case(1), 1)
 
+    def test_in_yd_comparing_length(self):
+        self.assertEqual(Foot_Yard_Measurement.happy_sad_yard_inch_case(36), 1)
+        self.assertNotEqual(Foot_Yard_Measurement.happy_sad_yard_inch_case(1), 1)
+                
 if __name__ == '__main__':
     unittest.main()

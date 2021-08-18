@@ -248,6 +248,17 @@ class Foot_Yard_Measurement():
         """
         return foot/3
 
+    def happy_sad_yard_inch_case(inch):
+        """
+            Description:
+                function happy_sad_yard_inch_case to check the value that converts foot into inch
+            Parameter:
+                foot as an input
+            Return:
+                returning the converted value of inch into yard.
+        """
+        return inch/36
+
 if __name__=='__main__':
     foot_obj = Foot_Length_Measurement()
     foot_obj.foot_length_comparision()
