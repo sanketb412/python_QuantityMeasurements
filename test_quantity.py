@@ -48,5 +48,14 @@ class MyTestCases(unittest.TestCase):
         """ 
         self.assertEqual(Foot_Length_Measurement.foot_length_type(2), int)
 
+    def test_foot_value_check(self):
+        """
+            Description:
+                function test_value_check check the value of the conversion.
+            assert:
+                checking the value as expected for inch
+        """ 
+        self.assertEqual(Foot_Length_Measurement.foot_length_value(3), 36)
+
 if __name__ == '__main__':
     unittest.main()

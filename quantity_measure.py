@@ -100,6 +100,17 @@ class Foot_Length_Measurement():
         """
         return type(foot)
 
+    def foot_length_value(foot):
+        """
+            Description:
+                function length_value to check the value that converts foot into inch
+            Parameter:
+                foot as an input
+            Return:
+                returning the converted value of foots into inch.
+        """
+        return foot*12
+
 if __name__=='__main__':
     foot_obj = Foot_Length_Measurement()
     foot_obj.foot_length_comparision()
