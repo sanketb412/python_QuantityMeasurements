@@ -28,6 +28,16 @@ class MyTestCases(unittest.TestCase):
     """ 
         self.assertEqual(Foot_Length_Measurement.foot_length_null(None), True)
 
+    def test_foot_ref_check(self):
+        """
+            Description:
+                function test_ref_check check the value call by referance .
+            assert:
+                checking the value as True expected wiith message
+        """ 
+        message = "Test Value is True"
+        foot = 2
+        self.assertWarns(Foot_Length_Measurement.foot_length_ref(foot), message)
 
 if __name__ == '__main__':
     unittest.main()
