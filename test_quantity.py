@@ -89,5 +89,14 @@ class MyTestCases(unittest.TestCase):
         """ 
         self.assertEqual(Inch_Length_Measurement.inch_length_type(60), int)
 
+    def test_inch_value_check(self):
+        """
+            Description:
+                function test_value_check check the value of the conversion.
+            assert:
+                checking the value as expected for inch
+        """ 
+        self.assertEqual(Inch_Length_Measurement.inch_length_value(36), 3)
+
 if __name__ == '__main__':
     unittest.main()
